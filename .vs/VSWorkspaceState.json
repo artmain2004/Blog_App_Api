@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Application",
+    "\\Application\\Mapper",
+    "\\Domain",
+    "\\Domain\\Interface",
+    "\\Domain\\Interface\\Repository",
+    "\\Infrastructure",
+    "\\Infrastructure\\Data",
+    "\\Infrastructure\\Redis",
+    "\\Infrastructure\\Repository"
+  ],
+  "SelectedNode": "\\blog-app.sln",
+  "PreviewInSolutionExplorer": false
+}

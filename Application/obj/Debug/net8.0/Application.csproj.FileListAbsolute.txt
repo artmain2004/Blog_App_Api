@@ -1,0 +1,17 @@
+D:\ARTEM\github_projects\blog-app\Application\bin\Debug\net8.0\Application.deps.json
+D:\ARTEM\github_projects\blog-app\Application\bin\Debug\net8.0\Application.dll
+D:\ARTEM\github_projects\blog-app\Application\bin\Debug\net8.0\Application.pdb
+D:\ARTEM\github_projects\blog-app\Application\bin\Debug\net8.0\Domain.dll
+D:\ARTEM\github_projects\blog-app\Application\bin\Debug\net8.0\Infrastructure.dll
+D:\ARTEM\github_projects\blog-app\Application\bin\Debug\net8.0\Domain.pdb
+D:\ARTEM\github_projects\blog-app\Application\bin\Debug\net8.0\Infrastructure.pdb
+D:\ARTEM\github_projects\blog-app\Application\obj\Debug\net8.0\Application.csproj.AssemblyReference.cache
+D:\ARTEM\github_projects\blog-app\Application\obj\Debug\net8.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\ARTEM\github_projects\blog-app\Application\obj\Debug\net8.0\Application.AssemblyInfoInputs.cache
+D:\ARTEM\github_projects\blog-app\Application\obj\Debug\net8.0\Application.AssemblyInfo.cs
+D:\ARTEM\github_projects\blog-app\Application\obj\Debug\net8.0\Application.csproj.CoreCompileInputs.cache
+D:\ARTEM\github_projects\blog-app\Application\obj\Debug\net8.0\Applicat.44B5EDA2.Up2Date
+D:\ARTEM\github_projects\blog-app\Application\obj\Debug\net8.0\Application.dll
+D:\ARTEM\github_projects\blog-app\Application\obj\Debug\net8.0\refint\Application.dll
+D:\ARTEM\github_projects\blog-app\Application\obj\Debug\net8.0\Application.pdb
+D:\ARTEM\github_projects\blog-app\Application\obj\Debug\net8.0\ref\Application.dll

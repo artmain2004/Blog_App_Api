@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "JQfFRHt2fKA32nQaxBo9+wxpdlK2lSrFN6+mVaH626A=",
+  "Source": "blog-app",
+  "BasePath": "_content/blog-app",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
