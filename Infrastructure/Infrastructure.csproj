@@ -8,6 +8,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <PackageReference Include="Azure.Storage.Blobs" Version="12.20.0" />
       <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.4" />
       <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.4">
         <PrivateAssets>all</PrivateAssets>
@@ -25,6 +26,10 @@
 
     <ItemGroup>
       <ProjectReference Include="..\Domain\Domain.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="BlobStorage\" />
     </ItemGroup>
 
 </Project>

@@ -6,6 +6,7 @@ using Application.Interface;
 using Application.Exceptions.PostExceptions;
 using Application.DTO.Request;
 using Application.DTO.Response;
+using Microsoft.AspNetCore.Http;
 
 
 namespace Application.Service;
@@ -53,7 +54,11 @@ public class PostService(IPostRepository postRepository) : IPostService
 	public async Task<string> CreatePost(PostCreateRequest postCreateRequest)
 	{
 
-		var newPost = PostMapper.GenerateNewPost(postCreateRequest);
+		var imageBytes = ImageMapper.ImageToByteArray(postCreateRequest.PostImage);
+
+		var imageString = Convert.ToBase64String(imageBytes);
+
+		var newPost = PostMapper.GenerateNewPost(postCreateRequest, imageString);
 
 		await postRepository.CreatePost(newPost);
 		

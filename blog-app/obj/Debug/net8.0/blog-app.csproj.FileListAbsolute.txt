@@ -56,3 +56,10 @@ D:\ARTEM\github_projects\blog-app\blog-app\obj\Debug\net8.0\refint\blog-app.dll
 D:\ARTEM\github_projects\blog-app\blog-app\obj\Debug\net8.0\blog-app.pdb
 D:\ARTEM\github_projects\blog-app\blog-app\obj\Debug\net8.0\blog-app.genruntimeconfig.cache
 D:\ARTEM\github_projects\blog-app\blog-app\obj\Debug\net8.0\ref\blog-app.dll
+D:\artem\github_projects\blog-app\blog-app\bin\Debug\net8.0\Azure.Core.dll
+D:\artem\github_projects\blog-app\blog-app\bin\Debug\net8.0\Azure.Storage.Blobs.dll
+D:\artem\github_projects\blog-app\blog-app\bin\Debug\net8.0\Azure.Storage.Common.dll
+D:\artem\github_projects\blog-app\blog-app\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\artem\github_projects\blog-app\blog-app\bin\Debug\net8.0\System.ClientModel.dll
+D:\artem\github_projects\blog-app\blog-app\bin\Debug\net8.0\System.IO.Hashing.dll
+D:\artem\github_projects\blog-app\blog-app\bin\Debug\net8.0\System.Memory.Data.dll

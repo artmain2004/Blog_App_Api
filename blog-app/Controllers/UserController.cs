@@ -1,8 +1,8 @@
 ﻿using Application;
 using Application.DTO.Request;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+
 
 namespace blog_app.Controllers
 {
@@ -14,9 +14,11 @@ namespace blog_app.Controllers
 
         private readonly IUserService _userService;
 
+       
         public UserController(IUserService userService)
         {
             _userService = userService;
+            
         }
 
 
@@ -39,12 +41,28 @@ namespace blog_app.Controllers
             return Ok(result);
         }
 
-        [HttpGet("logout")]
+       
 
-        public ActionResult UserLogOut()
+        [HttpPost("upload/{id}")]
+        public async Task<ActionResult> UploadUserAvatar([FromForm] IFormFile avatar, [FromRoute] Guid id)
         {
-            return Ok();
+            if (avatar == null)
+            {
+                return BadRequest("File not found");
+            }
+
+            var result = await _userService.UploadUserAvatar(avatar,id);
+
+            return Ok(result);
         }
+
+
+        
+
+        
+
+       
+
 
     }
 }

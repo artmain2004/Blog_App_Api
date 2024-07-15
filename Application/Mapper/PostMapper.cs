@@ -15,7 +15,8 @@ public static class PostMapper
             Body = post.Body,
             Name = post.User.Name,
             Lastname = post.User.Lastname,
-            Email = post.User.Email
+            Email = post.User.Email,
+            PostImage = post.PostImage
         };
     }
     
@@ -31,12 +32,13 @@ public static class PostMapper
             Email = post.User.Email,
             CreatedAt = post.CreatedAt,
             UpdatedAt = post.UpdatedAt,
+            PostImage = post.PostImage,
             Comments = post.Comments.Select(CommentMapper.ToCommentDto).ToList()
        
         };
     }
 
-    public static Post GenerateNewPost(PostCreateRequest postCreateRequest)
+    public static Post GenerateNewPost(PostCreateRequest postCreateRequest, string imageString)
     {
         return new Post()
         {
@@ -45,6 +47,7 @@ public static class PostMapper
             Body = postCreateRequest.Body,
             CreatedAt = DateTime.UtcNow,
             UserId = postCreateRequest.UserId,
+            PostImage = imageString
 
         };
 

@@ -27,7 +27,9 @@ public class UserService : IUserService
 		
 	}
 
-	public async Task<LoginResponse> Login(LoginRequest loginRequest)
+    
+
+    public async Task<LoginResponse> Login(LoginRequest loginRequest)
 	{
 
 		var userByEmail = await  _repository.GetUserByEmail(loginRequest.Email);
@@ -40,11 +42,6 @@ public class UserService : IUserService
 				
 		var token = _tokenService.GenerateJwtToken(userByEmail.Id, userByEmail.Name);
 
-				
-				
-		
-
-        
 
 
         return new LoginResponse()
@@ -55,18 +52,15 @@ public class UserService : IUserService
         } ;
 	}
 
-	public Task<string> LogOut()
-	{
-		throw new NotImplementedException();
-	}
+
 
 		
 
 	public async Task<string> Register(RegisterRequest registerRequest)
 	{
-		var userByEmail = await _repository.GetUserByEmail(registerRequest.Email);
+		var userByEmail = await _repository.IsUserExists(registerRequest.Email);
 				
-		if (userByEmail is not null) throw new UserExistsException("User already exists") ;
+		if (userByEmail) throw new UserExistsException("User already exists") ;
 				
 		var hashPassword = BCrypt.Net.BCrypt.HashPassword(registerRequest.Password);
 				
@@ -77,5 +71,18 @@ public class UserService : IUserService
 		return "Registration completed successfully";
 	}
 
-	
+    public async Task<string> UploadUserAvatar(IFormFile file, Guid id)
+    {
+
+		var userById = await _repository.GetUserById(id);
+		if (userById is null) throw new UserNotFoundException("User not found");
+		var imageBytes = ImageMapper.ImageToByteArray(file);
+
+
+		var baseString = Convert.ToBase64String(imageBytes);
+
+		await _repository.UploadUserAvatar(userById.Id, baseString);
+
+		return   "Avatar uploaded successfully";
+    }
 }

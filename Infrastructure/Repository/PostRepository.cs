@@ -54,9 +54,9 @@ public class PostRepository(BlogAppDbContext context) : IPostRepository
 		await _context.Posts
 		   .Where(p => p.Id == id)
 		   .ExecuteUpdateAsync(s => s
-		   .SetProperty(p => p.Title, title)
-		   .SetProperty( p => p.Body, body)
-		   .SetProperty (p => p.UpdatedAt, DateTime.UtcNow)
+				.SetProperty(p => p.Title, title)
+				.SetProperty( p => p.Body, body)
+				.SetProperty (p => p.UpdatedAt, DateTime.UtcNow)
 		   );
 			
 

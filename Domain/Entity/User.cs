@@ -11,9 +11,11 @@ public class User
 	public required string Email { get; set; }
 
 	public required string Password { get; set; }
-	
-	
-	public static User GenerateNewUser(string name, string lastname, string email, string password)
+
+    public string? ImageBase64 { get; set; }
+
+
+    public static User GenerateNewUser(string name, string lastname, string email, string password)
 	{
 		return new User()
 		{

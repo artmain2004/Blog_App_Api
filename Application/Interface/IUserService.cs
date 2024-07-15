@@ -1,5 +1,6 @@
 ﻿using Application.DTO.Request;
 using Application.DTO.Response;
+using Microsoft.AspNetCore.Http;
 
 namespace Application;
 
@@ -9,5 +10,9 @@ public interface IUserService
 	
 	Task<string> Register(RegisterRequest registerRequest);
 	
-	Task<string> LogOut();
+	
+
+	Task<string> UploadUserAvatar(IFormFile file,Guid id);
+
+	
 }

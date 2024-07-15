@@ -79,6 +79,11 @@ namespace Infastructure.Migrations
                         .HasColumnType("timestamp with time zone")
                         .HasColumnName("createdAt");
 
+                    b.Property<string>("PostImage")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("post_image");
+
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("text")
@@ -110,6 +115,11 @@ namespace Infastructure.Migrations
                         .IsRequired()
                         .HasColumnType("text")
                         .HasColumnName("email");
+
+                    b.Property<string>("ImageBase64")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("image_string");
 
                     b.Property<string>("Lastname")
                         .IsRequired()

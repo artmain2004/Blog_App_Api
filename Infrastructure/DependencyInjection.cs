@@ -1,4 +1,5 @@
-﻿using Domain.Interface;
+﻿using Domain.Entity;
+using Domain.Interface;
 using Infrastructure.Data;
 using Infrastructure.Repository;
 using Microsoft.EntityFrameworkCore;
@@ -14,6 +15,7 @@ public static class DependencyInjection
         service.AddDbContext<BlogAppDbContext>(options =>
         {
             options.UseNpgsql(configuration.GetConnectionString("DB"));
+         
         });
 
         //service.AddDbContextFactory<BlogAppDbContext>(options =>
@@ -23,11 +25,11 @@ public static class DependencyInjection
 
 
 
-        //service.AddStackExchangeRedisCache(options =>
-        //{
-        //    options.Configuration = configuration.GetConnectionString("Redis");
-        //    options.InstanceName = "BLOG_REDIS";
-        //});
+        service.AddStackExchangeRedisCache(options =>
+        {
+            options.Configuration = configuration.GetConnectionString("Redis");
+            options.InstanceName = "BLOG_REDIS";
+        });
 
         service.AddScoped<IUserRepository, UserRepository>();
         service.AddScoped<ICommentRepository, CommentRepository>();

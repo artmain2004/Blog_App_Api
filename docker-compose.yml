@@ -1,0 +1,16 @@
+version: '3.4'
+
+services:
+
+  database:
+    image: postgres:latest
+    container_name: "blog-app-database"
+    
+
+  blog-app:
+    container_name: "blog-app-api"
+    image: ${DOCKER_REGISTRY-}blogapp
+    depends_on : [database]
+    build:
+      context: .
+      dockerfile: blog-app/Dockerfile

@@ -18,6 +18,7 @@ public class PostEntityConfiguration : IEntityTypeConfiguration<Post>
         builder.Property(p => p.CreatedAt).HasColumnName("createdAt").IsRequired();
         builder.Property(p => p.UpdatedAt).HasColumnName("updatedAt");
         builder.Property(p => p.UserId).HasColumnName("user_id").IsRequired();
+        builder.Property(p => p.PostImage).HasColumnName("post_image");
 
         builder
             .HasOne<User>( p => p.User)

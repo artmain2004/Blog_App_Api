@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eOS4xBVZYKM=",
+  "dgSpecHash": "GCZjzK397ZI=",
   "success": true,
-  "projectFilePath": "D:\\artem\\github_projects\\blog-app\\Domain\\Domain.csproj",
+  "projectFilePath": "D:\\ARTEM\\github_projects\\blog-app\\Domain\\Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",

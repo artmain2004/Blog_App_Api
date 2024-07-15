@@ -17,6 +17,7 @@ public class UserEntityConfiguration : IEntityTypeConfiguration<User>
         builder.Property(p => p.Lastname).HasColumnName("lastname").IsRequired();
         builder.Property(p => p.Email).HasColumnName("email").IsRequired();
         builder.Property(p => p.Password).HasColumnName("password").IsRequired();
+        builder.Property(p => p.ImageBase64).HasColumnName("image_string");
 
         //builder.HasData(
 

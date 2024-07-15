@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,6 +15,8 @@ namespace Application.DTO.Request
         public required string Title { get; set; }
 
         public required string Body { get; set; }
+
+        public IFormFile? PostImage { get; set; }
 
 
 

@@ -11,6 +11,8 @@ public class CommentDto
     public  string Lastname { get; set; }
 
     public  string Email { get; set; }
-    
+
+    public string UserAvatar { get; set; }
+
     public required DateTime CreatedAt { get; set; }
 }

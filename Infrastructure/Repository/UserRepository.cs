@@ -14,6 +14,8 @@ public class UserRepository(BlogAppDbContext context) : IUserRepository
     public async Task<User?> GetUserByEmail(string email)
     {
         var userByEmail = await _context.Users.FirstOrDefaultAsync(u => u.Email == email);
+
+        
         
         return userByEmail;
     }
@@ -30,5 +32,28 @@ public class UserRepository(BlogAppDbContext context) : IUserRepository
         await _context.Users.AddAsync(user);
 
         await _context.SaveChangesAsync();
+    }
+
+    public async Task UploadUserAvatar(Guid id, string imageBase)
+    {
+        await _context.Users
+           .Where(p => p.Id == id)
+           .ExecuteUpdateAsync(s => s
+           .SetProperty(p => p.ImageBase64, imageBase)
+           
+           );
+
+
+
+
+
+
+        await _context.SaveChangesAsync();
+    }
+
+    public async Task<bool> IsUserExists(string email)
+    {
+        
+        return  _context.Users.Any(u => u.Email == email);
     }
 }

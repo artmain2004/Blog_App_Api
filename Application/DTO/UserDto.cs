@@ -15,5 +15,7 @@ namespace Application.DTO
         public string Lastname { get; set; }
 
         public string Email { get; set; }
+
+        public string Avatar { get; set; }
     }
 }

@@ -1,12 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Application",
-    "\\Application\\Mapper",
+    "\\blog-app",
+    "\\blog-app\\Controllers",
     "\\Domain",
-    "\\Domain\\Interface",
-    "\\Domain\\Interface\\Repository",
+    "\\Domain\\Entity",
     "\\Infrastructure",
+    "\\Infrastructure\\Configuration",
     "\\Infrastructure\\Data",
     "\\Infrastructure\\Redis",
     "\\Infrastructure\\Repository"

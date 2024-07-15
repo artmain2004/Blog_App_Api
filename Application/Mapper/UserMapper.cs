@@ -18,7 +18,8 @@ namespace Application.Mapper
                 Id = user.Id,
                 Name = user.Name,
                 Lastname = user.Lastname,
-                Email = user.Email
+                Email = user.Email,
+                Avatar = user.ImageBase64
             };
         }
 

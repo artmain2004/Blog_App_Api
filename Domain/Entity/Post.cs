@@ -12,6 +12,8 @@ public class Post
 
     public DateTime UpdatedAt { get; set; }
 
+    public string?  PostImage { get; set; }
+
     public required Guid UserId { get; set; }
 
     public User User { get; set; }
