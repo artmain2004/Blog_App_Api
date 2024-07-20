@@ -1,0 +1,46 @@
+name: dockercompose7667723600745479159
+services:
+  blog-app:
+    build:
+      context: D:\GitHub\blog-app-api
+      dockerfile: blog-app/Dockerfile
+    container_name: blog-app-api
+    depends_on:
+      database:
+        condition: service_started
+        required: true
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_HTTP_PORTS: "8080"
+      ASPNETCORE_HTTPS_PORTS: "8081"
+    image: blogapp
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 8080
+        protocol: tcp
+      - mode: ingress
+        target: 8081
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: C:\Users\Yura\AppData\Roaming/Microsoft/UserSecrets
+        target: /home/app/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\Yura\AppData\Roaming/ASP.NET/Https
+        target: /home/app/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+  database:
+    container_name: blog-app-database
+    image: postgres:latest
+    networks:
+      default: null
+networks:
+  default:
+    name: dockercompose7667723600745479159_default
