@@ -54,6 +54,6 @@ public class UserRepository(BlogAppDbContext context) : IUserRepository
     public async Task<bool> IsUserExists(string email)
     {
         
-        return  _context.Users.Any(u => u.Email == email);
+        return await  _context.Users.AnyAsync(u => u.Email == email);
     }
 }

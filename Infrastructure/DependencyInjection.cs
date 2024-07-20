@@ -27,7 +27,7 @@ public static class DependencyInjection
 
         service.AddStackExchangeRedisCache(options =>
         {
-            options.Configuration = configuration.GetConnectionString("Redis");
+            options.Configuration = configuration.GetConnectionString("REDIS");
             options.InstanceName = "BLOG_REDIS";
         });
 

@@ -28,15 +28,7 @@ public static class DependencyInjection
 			};
 			
 			
-			options.Events = new JwtBearerEvents
-			{
-				OnMessageReceived = context => 
-				{
-					context.Token = context.Request.Cookies["tasty_cookies"];
-					
-					return Task.CompletedTask;
-				}
-			};
+			
 			
 		});
 		

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ARTEM\\github_projects\\blog-app\\blog-app-testing\\blog-app-testing.csproj": {}
+    "D:\\GitHub\\blog-app-api\\blog-app-testing\\blog-app-testing.csproj": {}
   },
   "projects": {
-    "D:\\ARTEM\\github_projects\\blog-app\\Application\\Application.csproj": {
+    "D:\\GitHub\\blog-app-api\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ARTEM\\github_projects\\blog-app\\Application\\Application.csproj",
+        "projectUniqueName": "D:\\GitHub\\blog-app-api\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "D:\\ARTEM\\github_projects\\blog-app\\Application\\Application.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\ARTEM\\github_projects\\blog-app\\Application\\obj\\",
+        "projectPath": "D:\\GitHub\\blog-app-api\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\Yura\\.nuget\\packages\\",
+        "outputPath": "D:\\GitHub\\blog-app-api\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Yura\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -29,11 +29,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\ARTEM\\github_projects\\blog-app\\Domain\\Domain.csproj": {
-                "projectPath": "D:\\ARTEM\\github_projects\\blog-app\\Domain\\Domain.csproj"
+              "D:\\GitHub\\blog-app-api\\Domain\\Domain.csproj": {
+                "projectPath": "D:\\GitHub\\blog-app-api\\Domain\\Domain.csproj"
               },
-              "D:\\ARTEM\\github_projects\\blog-app\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "D:\\ARTEM\\github_projects\\blog-app\\Infrastructure\\Infrastructure.csproj"
+              "D:\\GitHub\\blog-app-api\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "D:\\GitHub\\blog-app-api\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }
@@ -82,21 +82,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\ARTEM\\github_projects\\blog-app\\blog-app-testing\\blog-app-testing.csproj": {
+    "D:\\GitHub\\blog-app-api\\blog-app-testing\\blog-app-testing.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ARTEM\\github_projects\\blog-app\\blog-app-testing\\blog-app-testing.csproj",
+        "projectUniqueName": "D:\\GitHub\\blog-app-api\\blog-app-testing\\blog-app-testing.csproj",
         "projectName": "blog-app-testing",
-        "projectPath": "D:\\ARTEM\\github_projects\\blog-app\\blog-app-testing\\blog-app-testing.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\ARTEM\\github_projects\\blog-app\\blog-app-testing\\obj\\",
+        "projectPath": "D:\\GitHub\\blog-app-api\\blog-app-testing\\blog-app-testing.csproj",
+        "packagesPath": "C:\\Users\\Yura\\.nuget\\packages\\",
+        "outputPath": "D:\\GitHub\\blog-app-api\\blog-app-testing\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Yura\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -111,8 +111,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\ARTEM\\github_projects\\blog-app\\blog-app\\blog-app.csproj": {
-                "projectPath": "D:\\ARTEM\\github_projects\\blog-app\\blog-app\\blog-app.csproj"
+              "D:\\GitHub\\blog-app-api\\blog-app\\blog-app.csproj": {
+                "projectPath": "D:\\GitHub\\blog-app-api\\blog-app\\blog-app.csproj"
               }
             }
           }
@@ -181,21 +181,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\ARTEM\\github_projects\\blog-app\\blog-app\\blog-app.csproj": {
+    "D:\\GitHub\\blog-app-api\\blog-app\\blog-app.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ARTEM\\github_projects\\blog-app\\blog-app\\blog-app.csproj",
+        "projectUniqueName": "D:\\GitHub\\blog-app-api\\blog-app\\blog-app.csproj",
         "projectName": "blog-app",
-        "projectPath": "D:\\ARTEM\\github_projects\\blog-app\\blog-app\\blog-app.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\ARTEM\\github_projects\\blog-app\\blog-app\\obj\\",
+        "projectPath": "D:\\GitHub\\blog-app-api\\blog-app\\blog-app.csproj",
+        "packagesPath": "C:\\Users\\Yura\\.nuget\\packages\\",
+        "outputPath": "D:\\GitHub\\blog-app-api\\blog-app\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Yura\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -210,14 +210,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\ARTEM\\github_projects\\blog-app\\Application\\Application.csproj": {
-                "projectPath": "D:\\ARTEM\\github_projects\\blog-app\\Application\\Application.csproj"
+              "D:\\GitHub\\blog-app-api\\Application\\Application.csproj": {
+                "projectPath": "D:\\GitHub\\blog-app-api\\Application\\Application.csproj"
               },
-              "D:\\ARTEM\\github_projects\\blog-app\\Domain\\Domain.csproj": {
-                "projectPath": "D:\\ARTEM\\github_projects\\blog-app\\Domain\\Domain.csproj"
+              "D:\\GitHub\\blog-app-api\\Domain\\Domain.csproj": {
+                "projectPath": "D:\\GitHub\\blog-app-api\\Domain\\Domain.csproj"
               },
-              "D:\\ARTEM\\github_projects\\blog-app\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "D:\\ARTEM\\github_projects\\blog-app\\Infrastructure\\Infrastructure.csproj"
+              "D:\\GitHub\\blog-app-api\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "D:\\GitHub\\blog-app-api\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }
@@ -273,21 +273,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\ARTEM\\github_projects\\blog-app\\Domain\\Domain.csproj": {
+    "D:\\GitHub\\blog-app-api\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ARTEM\\github_projects\\blog-app\\Domain\\Domain.csproj",
+        "projectUniqueName": "D:\\GitHub\\blog-app-api\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "D:\\ARTEM\\github_projects\\blog-app\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\ARTEM\\github_projects\\blog-app\\Domain\\obj\\",
+        "projectPath": "D:\\GitHub\\blog-app-api\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\Yura\\.nuget\\packages\\",
+        "outputPath": "D:\\GitHub\\blog-app-api\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Yura\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -344,21 +344,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\ARTEM\\github_projects\\blog-app\\Infrastructure\\Infrastructure.csproj": {
+    "D:\\GitHub\\blog-app-api\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ARTEM\\github_projects\\blog-app\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "D:\\GitHub\\blog-app-api\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "D:\\ARTEM\\github_projects\\blog-app\\Infrastructure\\Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\ARTEM\\github_projects\\blog-app\\Infrastructure\\obj\\",
+        "projectPath": "D:\\GitHub\\blog-app-api\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Yura\\.nuget\\packages\\",
+        "outputPath": "D:\\GitHub\\blog-app-api\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Yura\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -373,8 +373,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\ARTEM\\github_projects\\blog-app\\Domain\\Domain.csproj": {
-                "projectPath": "D:\\ARTEM\\github_projects\\blog-app\\Domain\\Domain.csproj"
+              "D:\\GitHub\\blog-app-api\\Domain\\Domain.csproj": {
+                "projectPath": "D:\\GitHub\\blog-app-api\\Domain\\Domain.csproj"
               }
             }
           }
@@ -447,7 +447,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
