@@ -1,4 +1,5 @@
-﻿using Application.DTO.Request;
+﻿using Application.DTO;
+using Application.DTO.Request;
 using Application.DTO.Response;
 using Microsoft.AspNetCore.Http;
 
@@ -10,7 +11,7 @@ public interface IUserService
 	
 	Task<string> Register(RegisterRequest registerRequest);
 	
-	
+	Task<UserDto> GetUserProfile(Guid id);
 
 	Task<string> UploadUserAvatar(IFormFile file,Guid id);
 

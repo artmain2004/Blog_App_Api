@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Http;
 using Application.Exceptions.UserExceptions;
 using Application.DTO.Request;
 using Application.DTO.Response;
+using Application.DTO;
 
 namespace Application;
 
@@ -27,7 +28,16 @@ public class UserService : IUserService
 		
 	}
 
-    
+    public async Task<UserDto> GetUserProfile(Guid id)
+    {
+        var userById = await _repository.GetUserById(id);
+
+		if (userById is null) throw new UserNotFoundException("User Not Found");
+
+		var userDto = UserMapper.ToUserDto(userById);
+
+		return userDto;
+    }
 
     public async Task<LoginResponse> Login(LoginRequest loginRequest)
 	{

@@ -13,7 +13,9 @@ public class UserRepository(BlogAppDbContext context) : IUserRepository
 
     public async Task<User?> GetUserByEmail(string email)
     {
-        var userByEmail = await _context.Users.FirstOrDefaultAsync(u => u.Email == email);
+        var userByEmail = await _context.Users
+            .AsNoTracking()
+            .FirstOrDefaultAsync(u => u.Email == email);
 
         
         
@@ -22,7 +24,9 @@ public class UserRepository(BlogAppDbContext context) : IUserRepository
 
     public async Task<User?> GetUserById(Guid id)
     {
-        var userById = await _context.Users.FirstOrDefaultAsync(u => u.Id == id);
+        var userById = await _context.Users
+            .AsNoTracking()
+            .FirstOrDefaultAsync(u => u.Id == id);
         
         return userById;
     }
@@ -54,6 +58,8 @@ public class UserRepository(BlogAppDbContext context) : IUserRepository
     public async Task<bool> IsUserExists(string email)
     {
         
-        return await  _context.Users.AnyAsync(u => u.Email == email);
+        return await  _context.Users
+            .AsNoTracking()
+            .AnyAsync(u => u.Email == email);
     }
 }

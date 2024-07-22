@@ -13,12 +13,14 @@ public class PostRepository(BlogAppDbContext context) : IPostRepository
 	public async Task<List<Post>> GetAllPosts()
 	{
 		return await _context.Posts
+			.AsNoTracking()
 			.Include(u => u.User)   
 			.ToListAsync();
 	}
 	public async Task<List<Post>> GetAllPostsByTitle(string title)
 	{
 		return await _context.Posts
+			.AsNoTracking()
 			.Where(post => post.Title.Contains(title))
 			.Include(u => u.User)
 			.ToListAsync();
@@ -27,6 +29,7 @@ public class PostRepository(BlogAppDbContext context) : IPostRepository
 	public async Task<List<Post>> GetAllPostsByUserId(Guid id)
 	{
 		return await _context.Posts
+			.AsNoTracking()
 			.Where(p => p.UserId == id)
 			.Include(u => u.User)
 			.ToListAsync();
@@ -35,6 +38,7 @@ public class PostRepository(BlogAppDbContext context) : IPostRepository
 	public async Task<Post?> GetPostById(Guid id)
 	{
 		return await _context.Posts
+			.AsNoTracking()
 			.Include(p => p.Comments)
 			.Include(p => p.User)
 			.FirstOrDefaultAsync(p => p.Id == id);

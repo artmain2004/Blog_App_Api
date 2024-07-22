@@ -57,6 +57,15 @@ namespace blog_app.Controllers
         }
 
 
+        [HttpGet("profile/{id}")]
+
+        public async Task<ActionResult> GetUserProfile([FromRoute] Guid id)
+        {
+            var result = await _userService.GetUserProfile(id);
+
+            return Ok(result);
+        }
+
         
 
         
