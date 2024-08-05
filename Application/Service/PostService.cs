@@ -24,13 +24,13 @@ public class PostService(IPostRepository postRepository) : IPostService
 
 	public async Task<SinglePostDtoResponse?> GetPostById(Guid id)
 	{
-		//var postFromCache = await redis.GetFromCache(id.ToString());
+		var postFromCache = await redis.GetFromCache(id.ToString());
 
-		//if (postFromCache is not null)
-		//{
-		//	var postFromCacheDto = PostMapper.ToSinglePostDtoResponse(postFromCache);
-		//	return postFromCacheDto;
-		//}
+		if (postFromCache is not null)
+		{
+			var postFromCacheDto = PostMapper.ToSinglePostDtoResponse(postFromCache);
+			return postFromCacheDto;
+		}
 
 		
 
@@ -41,11 +41,11 @@ public class PostService(IPostRepository postRepository) : IPostService
 		if (postFromDb is null) throw new PostNotFoundException("Post not found") ;
         
 
-        var postFromDbDto = PostMapper.ToSinglePostDtoResponse(postFromDb);
+        	var postFromDbDto = PostMapper.ToSinglePostDtoResponse(postFromDb);
 
 		
 
-		//await redis.SetToCache(id.ToString(), postFromDb);
+		await redis.SetToCache(id.ToString(), postFromDb);
 		
 		return postFromDbDto ;
 	}
